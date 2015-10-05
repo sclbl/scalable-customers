@@ -1,0 +1,26 @@
+body {
+  margin-top: 20px;
+}
+
+.no-button {
+  border: 0;
+  padding: 0;
+  margin-bottom: 0;
+  margin-left: 10px;
+}
+
+.fa-lg {
+  vertical-align: 0;
+}
+
+hr.low-margin {
+  margin: 20px 0;
+}
+
+.activity{
+  margin-bottom: 20px;
+}
+
+.activity .no-button{
+  height: 15px;
+}

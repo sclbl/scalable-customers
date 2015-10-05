@@ -1,0 +1,136 @@
+<template name="form">
+  <h5>Customer</h5>
+  {{#if isCustomerSelected}}
+    {{#with selectedCustomer}}
+      <button type="button" class="u-full-width button">Close</button>
+      <hr />
+      <form>
+        <div class="row">
+          <div class="twelve columns">
+            <label for="name">Name (Mandatory)</label>
+            <input id="name" class="u-full-width" type="text" placeholder="Name (Mandatory)" value="{{name}}" data-id="name">
+          </div>
+        </div>
+        <div class="row">
+          <div class="twelve columns">
+            <label for="position">Position</label>
+            <input id="position" class="u-full-width" type="text" placeholder="Position" value="{{position}}" data-id="position">
+          </div>
+        </div>
+        <div class="row">
+          <div class="twelve columns">
+            <label for="company">Company</label>
+            <input id="company" class="u-full-width" type="text" placeholder="Company" value="{{company}}" data-id="company">
+          </div>
+        </div>
+        <hr class="low-margin"/>
+        <div class="row">
+          <div class="twelve columns">
+            <label for="phone">Phone</label>
+            <input id="phone" class="u-full-width" type="text" placeholder="Phone" value="{{phone}}" data-id="phone">
+          </div>
+        </div>
+        <div class="row">
+          <div class="twelve columns">
+            <label for="email">E-Mail</label>
+            <input id="email" class="u-full-width" type="email" placeholder="E-Mail" value="{{email}}" data-id="email">
+          </div>
+        </div>
+        <div class="row">
+          <div class="twelve columns">
+            <label for="website">Website</label>
+            <input id="website" class="u-full-width" type="url" placeholder="Website" value="{{website}}" data-id="website">
+          </div>
+        </div>
+        <hr class="low-margin"/>
+        <div class="row">
+          <div class="twelve columns">
+            <label for="street">Street</label>
+            <input id="street" class="u-full-width" type="text" placeholder="Street" value="{{street}}" data-id="street">
+          </div>
+        </div>
+        <div class="row">
+          <div class="twelve columns">
+            <label for="postal-code">Postal code</label>
+            <input id="postal-code" class="u-full-width" type="text" placeholder="Postal code" value="{{postalCode}}" data-id="postal-code">
+          </div>
+        </div>
+        <div class="row">
+          <div class="twelve columns">
+            <label for="locality">Locality</label>
+            <input id="locality" class="u-full-width" type="text" placeholder="Locality" value="{{locality}}" data-id="locality">
+          </div>
+        </div>
+        <div class="row">
+          <div class="twelve columns">
+            <input type="submit" value="Update customer" class="u-full-width button button-primary"/>
+          </div>
+        </div>
+      </form>
+    {{/with}}
+  {{else}}
+    <form>
+      <div class="row">
+        <div class="twelve columns">
+          <label for="name">Name (Mandatory)</label>
+          <input id="name" class="u-full-width" type="text" placeholder="Name (Mandatory)" data-id="name">
+        </div>
+      </div>
+      <div class="row">
+        <div class="twelve columns">
+          <label for="position">Position</label>
+          <input id="position" class="u-full-width" type="text" placeholder="Position" data-id="position">
+        </div>
+      </div>
+      <div class="row">
+        <div class="twelve columns">
+          <label for="company">Company</label>
+          <input id="company" class="u-full-width" type="text" placeholder="Company" data-id="company">
+        </div>
+      </div>
+      <hr class="low-margin"/>
+      <div class="row">
+        <div class="twelve columns">
+          <label for="phone">Phone</label>
+          <input id="phone" class="u-full-width" type="text" placeholder="Phone" data-id="phone">
+        </div>
+      </div>
+      <div class="row">
+        <div class="twelve columns">
+          <label for="email">E-Mail</label>
+          <input id="email" class="u-full-width" type="email" placeholder="E-Mail" data-id="email">
+        </div>
+      </div>
+      <div class="row">
+        <div class="twelve columns">
+          <label for="website">Website</label>
+          <input id="website" class="u-full-width" type="url" placeholder="Website" data-id="website">
+        </div>
+      </div>
+      <hr class="low-margin"/>
+      <div class="row">
+        <div class="twelve columns">
+          <label for="street">Street</label>
+          <input id="street" class="u-full-width" type="text" placeholder="Street" data-id="street">
+        </div>
+      </div>
+      <div class="row">
+        <div class="twelve columns">
+          <label for="postal-code">Postal code</label>
+          <input id="postal-code" class="u-full-width" type="text" placeholder="Postal code" data-id="postal-code">
+        </div>
+      </div>
+      <div class="row">
+        <div class="twelve columns">
+          <label for="locality">Locality</label>
+          <input id="locality" class="u-full-width" type="text" placeholder="Locality" data-id="locality">
+        </div>
+      </div>
+      <div class="row">
+        <div class="twelve columns">
+          <input type="submit" value="Add contact" class="u-full-width button button-primary"/>
+        </div>
+      </div>
+    </form>
+  {{/if}}
+</template>

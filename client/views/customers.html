@@ -1,0 +1,17 @@
+<template name="customers">
+  <input type="text" class="u-full-width" placeholder="Search..." data-action="search"/>
+  <hr />
+  {{#if customers.count}}
+    <ul>
+      {{#each customers}}
+        <li>
+          <button class="no-button" data-action="open">{{company}}</button><button class="no-button" data-action="remove"><i class="fa fa-trash-o fa-lg"></i></button>
+        </li>
+      {{/each}}
+    </ul>
+  {{else}}
+    <div class="text-center">
+      No customers found...
+    </div>
+  {{/if}}
+</template>

@@ -1,0 +1,27 @@
+<template name="activitiesForm">
+  {{#if isCustomerSelected}}
+    <h5>Activities</h5>
+    {{#if activitiesAvailable}}
+      <div class="row">
+        {{#each activities}}
+          <div class="twelve columns activity">
+            <div class="row">
+              <div class="twelve columns">
+                <strong>({{formattedCreatedAt createdAt}})</strong>
+                <button type="button" class="no-button u-pull-right" data-action="remove"><i class="fa fa-trash fa-lg"></i></button>
+              </div>
+            </div>
+            <div class="row">
+              <div class="twelve columns">
+                {{body}}
+              </div>
+            </div>
+          </div>
+        {{/each}}
+      </div>
+    {{/if}}
+    <form>
+      <input type="text" id="body" name="body" placeholder="Activity" class="u-full-width" />
+    </form>
+  {{/if}}
+</template>
