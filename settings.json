@@ -1,0 +1,22 @@
+{
+  "public": {
+    "scalable": {
+      "module": {
+        "name": "Customers",
+        "developer": "Scalable"
+      },
+      "core": {
+        "settings": {
+          "rootUrl": "http://host:port"
+        }
+      }
+    }
+  },
+  "scalable": {
+    "core": {
+      "settings": {
+        "secretKey": "XXX"
+      }
+    }
+  }
+}
